@@ -1,0 +1,22 @@
+---
+
+puppetdb:
+  protocol: https
+  host: localhost
+  port: 8080
+  ssl_verify: true
+  timeout: 10
+  url_path: /
+  ssl_key: ~
+  ssl_cert: ~
+  ca_cert: ~
+
+query:
+  environment: production
+  last_report: 2
+  deactivated: false
+  expired: false
+  resource_type: Class
+  title_regexp: '^Role::'
+  title_strip: '^Role::'
+  facts_as_hostvars: []
